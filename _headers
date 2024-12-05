@@ -1,4 +1,3 @@
-# a path:
-inicio.html
-  # headers for that path:
+/inicio.html
   X-Frame-Options: DENY
+
