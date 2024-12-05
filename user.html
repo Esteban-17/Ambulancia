@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mapa de Centros de Salud - Tunja</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="user.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="   
+    crossorigin="anonymous"/>
+</head>
+<body>
+
+  <div id="hospitalSelector">
+    <select id="hospitales">
+      <option value="">Seleccionar hospital de origen</option>
+      </select>
+  </div>
+
+  <div id="instructions">
+    Arrastre las marcas para iniciar<br>
+    <span style="color: red;">Roja:</span> Destino - lugar accidente<br>
+    <span style="color: blue;">Azul:</span> Origen - Salida de la ambulancia
+  </div>
+
+  <div id="map"></div> 
+
+  <div id="menu">
+    <div class="coordinates">
+      <div class="coords-box"> <span style="color: red;">Destino:</span> <span id="destinationCoords"></span></div>
+      <div class="coords-box"> <span style="color: blue;">Origen:</span> <span id="originCoords"></span></div>
+    </div>
+    <button id="calculateRouteBtn">Calcular Ruta</button>
+  </div> 
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="user.js"></script>
+</body>
+</html>

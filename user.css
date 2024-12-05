@@ -1,0 +1,66 @@
+#map {
+    height: 100vh; /* El mapa ocupa toda la altura de la pantalla */
+}
+  
+#instructions {
+    position: absolute;
+    top: 100px; /* Ajusta este valor para mover el cuadro hacia abajo */
+    left: 10px;
+    z-index: 1000; 
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#hospitalSelector {
+    position: absolute;
+    top: 50%;         /* Colocar a la mitad de la altura de la pantalla */
+    left: 10px;      /* Colocar en la parte derecha */
+    transform: translateY(-50%); /* Ajustar la posición verticalmente */
+    z-index: 1000;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#menu {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); /* Centrar el menú horizontalmente */
+    z-index: 1000;
+    background-color: white;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex; /* Usar flexbox para alinear los elementos */
+    align-items: flex-start; /* Alinear verticalmente al centro */
+    flex-direction: column;
+}
+  
+.coordinates {
+    margin-bottom: 10px;
+    margin-right: 20px; /* Espacio entre las coordenadas y el botón */
+    font-size: 14px;
+    width: 100%;
+}
+  
+#calculateRouteBtn {
+    background-color: #4CAF50; /* Color verde para el botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.coords-box {
+    background-color: #f9f9f9; /* Color de fondo para el recuadro */
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    margin-bottom: 5px; /* Espacio entre las líneas de coordenadas */
+    border-radius: 3px;
+}
