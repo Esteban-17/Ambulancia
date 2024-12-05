@@ -1,0 +1,4 @@
+# a path:
+inicio.html
+  # headers for that path:
+  X-Frame-Options: DENY
